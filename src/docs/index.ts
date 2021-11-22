@@ -12,6 +12,10 @@ export default {
       url: 'http://localhost:3001',
       description: 'Local Server',
     },
+    {
+      url: 'https://inclusio-challenge.herokuapp.com/docs/',
+      description: 'Deploy',
+    },
   ],
   paths: {
     ...sumPath,
