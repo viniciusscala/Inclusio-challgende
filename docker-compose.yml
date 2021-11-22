@@ -1,0 +1,18 @@
+version: "3"
+services:
+  server:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: nodejs-server
+    container_name: Inclusio-challenge-server
+    restart: unless-stopped
+    ports:
+      - "3001:3001"
+    volumes:
+      - .:/home/node/app
+      - node_modules:/home/node/app/node_modules
+    command: yarn dev
+
+volumes:
+  node_modules:
