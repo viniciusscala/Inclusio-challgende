@@ -9,12 +9,12 @@ export default {
   },
   servers: [
     {
-      url: 'http://localhost:3001',
-      description: 'Local Server',
+      url: 'https://inclusio-challenge.herokuapp.com',
+      description: 'Deploy',
     },
     {
-      url: 'https://inclusio-challenge.herokuapp.com/docs/',
-      description: 'Deploy',
+      url: 'http://localhost:3001',
+      description: 'Local Server',
     },
   ],
   paths: {
